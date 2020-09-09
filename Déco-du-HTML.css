@@ -1,0 +1,134 @@
+p, h1, h2, h3, li, ul, h4, h5, h6, div
+{
+color: rgb(223, 213, 213);
+font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: rgba(11, 11, 12, 0.904);
+    /* border:  red outset; */
+    
+}
+
+article
+{
+    text-align: center;
+
+}
+
+h1
+{
+text-decoration: underline rgb(47, 102, 255);
+text-align: center;
+}
+a
+{
+font-size: 2em;
+color: red;
+}
+
+
+a:visited /* Quand le visiteur a déjà vu la page concernée */
+{
+    color: rgba(62, 199, 34, 0.863) /* Appliquer une couleur x  */
+}
+
+
+
+.Mail
+{
+color: red
+font-family sans-serif;
+
+}
+footer
+{
+
+    font-size: 25px ;
+    width: 2000;
+    height: 210px;
+    text-align: justify;
+    border: 1px solid rgb(0, 0, 0);
+    overflow: auto;
+   word-wrap: break-word;
+   text-align: center;
+   background-color: rgb(0, 0, 0);
+
+}
+.conteneur
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+ hr /*Fait une ligne. Je la modifie */
+{
+    color: red;
+    font-size: 1cm;
+    border: 3px solid red
+}
+
+button {
+ /** Ces directives indiquent au lien de ressembler à un bouton pour les principaux moteurs de rendu **/
+ -webkit-appearance: button;
+ -moz-appearance: button;
+ appearance: button;
+ /**Les directives en dessous enlèvent l'apparence par défaut en bleu et avec du texte souligné pour un lien hypertexte **/
+ text-decoration: none;
+ color: initial;
+}
+
+  
+  
+  
+  
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 25%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: blue;
+    border-bottom: 2px solid red;
+}
+
+.conteneur{
+  margin: 0px 20px;
+  height: 1500px;
+}
+  
